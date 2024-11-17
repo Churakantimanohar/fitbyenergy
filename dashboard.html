@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Energy | Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Fit Energy</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="community.html">Community Impact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="dashboard-section">
+        <div class="profile">
+            <img src="images/person-1.jpeg" alt="User Profile" class="profile-picture">
+            <h2>John Doe</h2>
+            <p>Email: john.doe@example.com</p>
+            <p>Registered: January 1, 2024</p>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total Energy Generated</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 75%;"></div>
+                </div>
+                <p><strong>7500W</strong> generated</p>
+            </div>
+
+            <div class="stat-card comparison">
+                <h3>Comparison</h3>
+                <p>Top Performer: <strong>10,000W</strong></p>
+                <p>Community Average: <strong>5,500W</strong></p>
+            </div>
+        </div>
+
+        <div class="achievements">
+            <h3>Your Achievements</h3>
+            <div class="badges">
+                <span class="badge">🌟 Top Performer</span>
+                <span class="badge">💪 Consistent Cycler</span>
+                <span class="badge">🌿 Eco Hero</span>
+            </div>
+        </div>
+
+        <div class="analytics">
+            <h3>Energy Generation Over Time</h3>
+            <canvas id="energyChart"></canvas>
+        </div>
+
+        <div class="tips">
+            <h3>Tips to Improve</h3>
+            <ul>
+                <li>Cycle 20% longer each session to reach the top 5%</li>
+                <li>Participate in team challenges for bonus points</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fit Energy. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

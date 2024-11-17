@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Energy | Community Impact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <header class="navbar">
+        <div class="logo"></div> <!-- Logo styled via CSS -->
+        <nav>
+            <ul>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="leaderboard.html">Leaderboard</a></li>
+                <li><a href="community.html">Community Impact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Community Impact Section -->
+    <section class="section">
+        <h2>Community Impact</h2>
+        <div class="impact-stats">
+            <!-- Total Energy Generated -->
+            <div class="stat">
+                <h3>Total Energy Generated</h3>
+                <div class="meter-container">
+                    <svg class="circular-meter" viewBox="0 0 120 120">
+                        <circle class="circle-bg" cx="60" cy="60" r="54"></circle>
+                        <circle class="circle-fg" cx="60" cy="60" r="54"></circle>
+                    </svg>
+                    <div class="meter-value" id="totalEnergyMeter">0 W</div>
+                </div>
+            </div>
+
+            <!-- Equivalent Trees Planted -->
+            <div class="stat">
+                <h3>Equivalent Trees Planted</h3>
+                <div class="meter-container">
+                    <svg class="circular-meter" viewBox="0 0 120 120">
+                        <circle class="circle-bg" cx="60" cy="60" r="54"></circle>
+                        <circle class="circle-fg" cx="60" cy="60" r="54"></circle>
+                    </svg>
+                    <div class="meter-value" id="treesPlantedMeter">0 Trees</div>
+                </div>
+            </div>
+
+            <!-- Watts Generated -->
+            <div class="stat">
+                <h3>Watts Generated</h3>
+                <div class="meter-container">
+                    <svg class="circular-meter" viewBox="0 0 120 120">
+                        <circle class="circle-bg" cx="60" cy="60" r="54"></circle>
+                        <circle class="circle-fg" cx="60" cy="60" r="54"></circle>
+                    </svg>
+                    <div class="meter-value" id="wattsGeneratedMeter">0 W</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Fit Energy. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
